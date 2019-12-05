@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>2-vue打包 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、在vue项目中输入npm run build, 2、把打包生成的dist文件夹的内容放进apache的WWW文件夹中， 3、手机输入10.8.215.97:8081即可，看到如图所示内容：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2-vue打包">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;OTY-QQ&#x2F;OTY-QQ_vue-blog&#x2F;2019&#x2F;12&#x2F;05&#x2F;2-vue%E6%89%93%E5%8C%85&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、在vue项目中输入npm run build, 2、把打包生成的dist文件夹的内容放进apache的WWW文件夹中， 3、手机输入10.8.215.97:8081即可，看到如图所示内容：">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;github.com&#x2F;OTY-QQ&#x2F;blog-images&#x2F;raw&#x2F;master&#x2F;vueImages&#x2F;vueStudy&#x2F;2-vue%E6%89%93%E5%8C%85&#x2F;1.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;github.com&#x2F;OTY-QQ&#x2F;blog-images&#x2F;raw&#x2F;master&#x2F;vueImages&#x2F;vueStudy&#x2F;2-vue%E6%89%93%E5%8C%85&#x2F;2.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;github.com&#x2F;OTY-QQ&#x2F;blog-images&#x2F;raw&#x2F;master&#x2F;vueImages&#x2F;vueStudy&#x2F;2-vue%E6%89%93%E5%8C%85&#x2F;3.png">
+<meta property="og:updated_time" content="2019-12-05T03:46:32.988Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;github.com&#x2F;OTY-QQ&#x2F;blog-images&#x2F;raw&#x2F;master&#x2F;vueImages&#x2F;vueStudy&#x2F;2-vue%E6%89%93%E5%8C%85&#x2F;1.png">
+  
+    <link rel="alternate" href="/OTY-QQ_vue-blog.git/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/OTY-QQ_vue-blog.git/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/OTY-QQ_vue-blog.git/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/OTY-QQ_vue-blog.git/">Home</a>
+        
+          <a class="main-nav-link" href="/OTY-QQ_vue-blog.git/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/OTY-QQ_vue-blog.git/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/OTY-QQ/OTY-QQ_vue-blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2-vue打包" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/OTY-QQ_vue-blog.git/2019/12/05/2-vue%E6%89%93%E5%8C%85/" class="article-date">
+  <time datetime="2019-12-05T03:42:43.280Z" itemprop="datePublished">2019-12-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      2-vue打包
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、在vue项目中输入npm-run-build"><a href="#1、在vue项目中输入npm-run-build" class="headerlink" title="1、在vue项目中输入npm run build,"></a>1、在vue项目中输入npm run build,</h3><p><img src="https://github.com/OTY-QQ/blog-images/raw/master/vueImages/vueStudy/2-vue%E6%89%93%E5%8C%85/1.png" alt="img"></p>
+<h3 id="2、把打包生成的dist文件夹的内容放进apache的WWW文件夹中，"><a href="#2、把打包生成的dist文件夹的内容放进apache的WWW文件夹中，" class="headerlink" title="2、把打包生成的dist文件夹的内容放进apache的WWW文件夹中，"></a>2、把打包生成的dist文件夹的内容放进apache的WWW文件夹中，</h3><p><img src="https://github.com/OTY-QQ/blog-images/raw/master/vueImages/vueStudy/2-vue%E6%89%93%E5%8C%85/2.png" alt="img"></p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="3、手机输入10-8-215-97-8081即可，看到如图所示内容："><a href="#3、手机输入10-8-215-97-8081即可，看到如图所示内容：" class="headerlink" title="3、手机输入10.8.215.97:8081即可，看到如图所示内容："></a>3、手机输入10.8.215.97:8081即可，看到如图所示内容：</h3><p><img src="https://github.com/OTY-QQ/blog-images/raw/master/vueImages/vueStudy/2-vue%E6%89%93%E5%8C%85/3.png" alt="img"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/OTY-QQ/OTY-QQ_vue-blog/2019/12/05/2-vue%E6%89%93%E5%8C%85/" data-id="ck3sco01o0003t8qq0g4a2h6s" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/OTY-QQ_vue-blog.git/2019/12/05/7-vue%E7%9A%84%E8%B7%AF%E5%93%9F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          7-vue的路哟
+        
+      </div>
+    </a>
+  
+  
+    <a href="/OTY-QQ_vue-blog.git/2019/12/05/1-%E5%B1%80%E5%9F%9F%E7%BD%91%E8%BF%9E%E6%8E%A5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">把本地电脑部署为服务器，供局域网的设备访问</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/OTY-QQ_vue-blog.git/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/OTY-QQ_vue-blog.git/2019/12/05/4-src%E7%9B%AE%E5%BD%95/">4-src目录</a>
+          </li>
+        
+          <li>
+            <a href="/OTY-QQ_vue-blog.git/2019/12/05/9-%E5%B0%81%E8%A3%85axios/">9-封装axios</a>
+          </li>
+        
+          <li>
+            <a href="/OTY-QQ_vue-blog.git/2019/12/05/10-%E4%BD%BF%E7%94%A8vuex/">10-使用vuex</a>
+          </li>
+        
+          <li>
+            <a href="/OTY-QQ_vue-blog.git/2019/12/05/8-%E8%A7%A3%E5%86%B3axios%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/">8-解决axios跨域问题</a>
+          </li>
+        
+          <li>
+            <a href="/OTY-QQ_vue-blog.git/2019/12/05/5-vue-cli%E5%AF%BC%E5%85%A5%E6%8F%92%E4%BB%B6/">5-vue-cli导入插件</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/OTY-QQ_vue-blog.git/" class="mobile-nav-link">Home</a>
+  
+    <a href="/OTY-QQ_vue-blog.git/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/OTY-QQ_vue-blog.git/fancybox/jquery.fancybox.css">
+  <script src="/OTY-QQ_vue-blog.git/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/OTY-QQ_vue-blog.git/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
